@@ -1,3 +1,10 @@
+import Header from '../components/Header';
+
 export default () => {
-  return <div>Welcome to Next.js</div>;
+  return (
+    <>
+      <Header />
+      <div> Welcome to Next.js </div>
+    </>
+  );
 };

@@ -23,8 +23,30 @@
   },
   "homepage": "https://github.com/nohseungrae/nestjsCRUD#readme",
   "dependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "global": "^4.4.0",
+    "http-proxy-middleware": "^1.0.3",
+    "nan": "^2.14.0",
     "next": "^9.3.5",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "react/prefer-stateless-function": 0,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/prop-types": 0
+    },
+    "env": {
+      "browser": true
+    }
   }
 }
