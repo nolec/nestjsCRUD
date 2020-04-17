@@ -1,10 +1,5 @@
-import Header from '../components/Header';
+import React from 'react';
 
-export default () => {
-  return (
-    <>
-      <Header />
-      <div> Welcome to Next.js </div>
-    </>
-  );
-};
+const Home = () => <div>Home Page</div>;
+
+export default Home;

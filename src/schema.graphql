@@ -1,0 +1,15 @@
+type Board {
+  id: String!
+  writer: String!
+  title: String!
+  contents: String!
+}
+type Query {
+  boards: [Board]!
+  getBoard(id: String!): Board!
+}
+type Mutation {
+  createBoard(writer: String!, title: String!, contents: String!): Board!
+  updateBoard(id: String!, title: String!, contents: String!): Board!
+  deleteBoard(id: String!): Board!
+}

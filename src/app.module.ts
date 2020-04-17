@@ -7,7 +7,10 @@ import { GraphQLModule } from '@nestjs/graphql';
 
 @Module({
   imports: [
-    GraphQLModule.forRoot({ autoSchemaFile: './schema.gql' }),
+    GraphQLModule.forRoot({
+      typePaths: ['./**/*.graphql'],
+      resolverValidationOptions: { requireResolversForResolveType: false },
+    }),
     BoardsModule,
     MongooseModule.forRoot(
       'mongodb+srv://saracen:saracen@nolec-a3hlx.mongodb.net/nest?retryWrites=true&w=majority',
