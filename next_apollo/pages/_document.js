@@ -10,11 +10,6 @@ export default class MyDocument extends Document {
   render() {
     return (
       <div>
-        <Head>
-          <title>My Shop</title>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="viewport" content="" />
-        </Head>
         <body>
           <div id="root">
             <Main />

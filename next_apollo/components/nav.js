@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 
 export default () => {
@@ -5,10 +6,14 @@ export default () => {
     <nav>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">
+            <a>home</a>
+          </Link>
         </li>
         <li>
-          <Link href="/board">게시판</Link>
+          <Link href="/board">
+            <a>게시판</a>
+          </Link>
         </li>
       </ul>
     </nav>
