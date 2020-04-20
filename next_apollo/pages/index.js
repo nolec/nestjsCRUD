@@ -1,24 +1,9 @@
-import Nav from '../components/nav';
-import Link from 'next/link';
 import React from 'react';
-
-const MyLink = (props) => {
-  console.log(props);
-  return (
-    <div>
-      <Link href="/board">
-        <a>{props.title}</a>
-      </Link>
-    </div>
-  );
-};
 
 export default function Home() {
   return (
     <div className="container">
-      <Nav />
       <div>Home Page</div>
-      <MyLink title="board" />
       {/*<main>*/}
       {/*  <h1 className="title">*/}
       {/*    Welcome to <a href="https://nextjs.org">Next.js!</a>*/}
